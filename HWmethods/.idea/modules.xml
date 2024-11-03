@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/HWconstructors/HWconstructors.iml" filepath="$PROJECT_DIR$/HWconstructors/HWconstructors.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HWmethods.iml" filepath="$PROJECT_DIR$/HWmethods.iml" />
+    </modules>
+  </component>
+</project>
