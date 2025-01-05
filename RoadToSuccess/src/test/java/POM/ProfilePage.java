@@ -9,6 +9,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.asserts.Assertion;
 
+import java.io.File;
+
 public class ProfilePage extends BasePage{
 
     @FindBy (xpath = "//img[contains(@alt,'Profile Picture')]" )
@@ -27,12 +29,12 @@ public class ProfilePage extends BasePage{
         super(driver, log);
         PageFactory.initElements(driver, this);
     }
-    public void ChangeProfilePicture(String path){
+    public void ChangeProfilePicture(File file){
         wait.until(ExpectedConditions.visibilityOf(profilePicture));
         boolean profilePictureElementPresent = profilePicture.isDisplayed();
         Assert.assertTrue(profilePictureElementPresent, "Profile picture element not found!");
         profilePicture.click();
-        profilePicture.sendKeys(path);
+        profilePicture.sendKeys(file.getAbsolutePath());
 
     }
 }
