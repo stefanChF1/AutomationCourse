@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b4b07ac5-60eb-4729-907a-dcc681aa2e38" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../HWmethods/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HWmethods/HWconstructors/HWinherit/HWinherit.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HWmethods/HWconstructors/HWinherit/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HWmethods/HWinheritance/HWinheritance.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HWmethods/HWinheritance/exerciese2/exerciese2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HWmethods/src/Shape.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MavenTest/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MavenTest/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MavenTest/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MavenTest/src/main/java/Assertions/assertFalse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MavenTest/src/main/java/Assertions/assertSoft.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MavenTest/src/main/java/Assertions/assertTrue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MavenTest/src/test/java/org/example/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HWmethods/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HWmethods/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../homeworkLoops/homeworkLoops.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../homeworkLoops/homeworkLoops.iml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 7
+}]]></component>
+  <component name="ProjectId" id="2p7cbAhAKPgr0fVs3DAI2uKsSoN" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="sortKey" value="BY_TIME_DESCENDING" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b4b07ac5-60eb-4729-907a-dcc681aa2e38" name="Changes" comment="" />
+      <created>1732120624412</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1732120624412</updated>
+    </task>
+    <servers />
+  </component>
+</project>

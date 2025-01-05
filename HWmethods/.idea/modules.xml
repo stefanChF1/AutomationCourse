@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/HWconstructors/HWconstructors.iml" filepath="$PROJECT_DIR$/HWconstructors/HWconstructors.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HWinheritance/HWinheritance.iml" filepath="$PROJECT_DIR$/HWinheritance/HWinheritance.iml" />
       <module fileurl="file://$PROJECT_DIR$/HWmethods.iml" filepath="$PROJECT_DIR$/HWmethods.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HWinheritance/exerciese2/exerciese2.iml" filepath="$PROJECT_DIR$/HWinheritance/exerciese2/exerciese2.iml" />
     </modules>
   </component>
 </project>
