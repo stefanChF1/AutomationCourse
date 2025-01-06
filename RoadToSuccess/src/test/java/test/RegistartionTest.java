@@ -10,7 +10,7 @@ public class RegistartionTest extends gui.base.BaseTest {
         RegistrationPage regPageMethods;
         regPageMethods = new RegistrationPage(driver,log);
 
-        driver.get("http://training.skillo-bg.com:4300/users/register");
+        driver.get(REGISTRATION_URL);
         log.info("Starting REGISTRATION test");
         regPageMethods.regUserEnterUsername();
         regPageMethods.regUserEnterEmail();

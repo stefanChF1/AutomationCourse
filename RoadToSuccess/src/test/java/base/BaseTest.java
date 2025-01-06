@@ -20,6 +20,7 @@ import java.util.Map;
 public class BaseTest {
     public static final String LOGIN_URL = "http://training.skillo-bg.com:4300/users/login";
     public static final String HOME_URL = "http://training.skillo-bg.com:4300/posts/all";
+    public static final String REGISTRATION_URL = "http://training.skillo-bg.com:4300/users/register";
     protected static final String TEST_RESOURCES_DIR = "src/test/resources/";
     protected static final String DOWNLOAD_DIR = TEST_RESOURCES_DIR.concat("download/");
     protected static final String SCREENSHOTS_DIR = TEST_RESOURCES_DIR.concat("screenshots/");
