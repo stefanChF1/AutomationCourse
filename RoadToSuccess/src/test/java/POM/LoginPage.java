@@ -25,14 +25,8 @@ public class LoginPage extends BasePage {
     private WebElement navBarProfile;
     @FindBy(xpath = "//img[contains(@alt,'Profile Picture')]")
     private WebElement profilePicture;
-//    @FindBy(xpath = "//i[contains(@class,'far fa-plus-square fa-lg')]")
-//    private WebElement newPost;
-//    @FindBy(xpath = "/html/body/app-root/div[2]/app-profile/div/div[1]/app-profile-section/div/div/div[2]/div/div[1]/i")
-//    private WebElement editProfile;
-//    @FindBy(xpath = "//i[contains(@class,'fas fa-sign-out-alt fa-lg')]")
-//    private WebElement signOutButton;
-//    @FindBy(xpath = "//label[contains(@class,'btn-all btn btn-primary active')]")
-//    private WebElement allPostProfilePage;
+    @FindBy(css = "div.toast-message")
+    private WebElement popUpMsg;
 
     public LoginPage(WebDriver driver, Logger log) {
         super(driver, log);
@@ -67,18 +61,23 @@ public class LoginPage extends BasePage {
         Assert.assertTrue(signInButtonPresent, "Button not found");
         signIn.click();
     }
+    public void popUpMsgSuccess() {
+        wait.until(ExpectedConditions.visibilityOf(popUpMsg));
+        Assert.assertEquals(popUpMsg.getText(), "Successful login!");
+    }
+    public void popUpMsgFail(){
+        wait.until(ExpectedConditions.visibilityOf(popUpMsg));
+        Assert.assertEquals(popUpMsg.getText(), "Wrong username or password!");
+    }
+    public void popUpMsgLogout(){
+        wait.until(ExpectedConditions.visibilityOf(popUpMsg));
+        Assert.assertEquals(popUpMsg.getText(), "Successful logout!");
+    }
     public void openProfile(){
         wait.until(ExpectedConditions.visibilityOf(navBarProfile));
         boolean profileButtonPresent = navBarProfile.isDisplayed();
         Assert.assertTrue(profileButtonPresent, "Profile button is not present!");
         navBarProfile.click();
-    }
-    public void ChangeProfilePicture(String path) {
-        wait.until(ExpectedConditions.visibilityOf(profilePicture));
-        boolean profilePictureElementPresent = profilePicture.isDisplayed();
-        Assert.assertTrue(profilePictureElementPresent, "Profile picture element not found!");
-        profilePicture.click();
-        profilePicture.sendKeys(path);
 
     }
 }

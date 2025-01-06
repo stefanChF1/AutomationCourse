@@ -3,18 +3,19 @@ package test;
 import POM.LoginPage;
 import org.testng.annotations.Test;
 
-public class UploadingPicture extends gui.base.BaseTest {
+public class LoginSuccess extends gui.base.BaseTest {
 
     @Test
-    public void UploadingPictureTest(){
+    public void signInWithValidCredentials() {
         LoginPage loginPageMethods = new LoginPage(super.driver,log);
 
-        driver.get("http://training.skillo-bg.com:4300/users/login");
+        driver.get(LOGIN_URL);
         loginPageMethods.enterUserName("MainAdminUser");
         loginPageMethods.enterPass("Admin123");
         loginPageMethods.clickRememberMe();
         loginPageMethods.clickSignIn();
+        loginPageMethods.popUpMsgSuccess();
+
 
     }
-
 }

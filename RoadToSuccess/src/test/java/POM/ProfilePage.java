@@ -7,9 +7,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
-import org.testng.asserts.Assertion;
-
-import java.io.File;
 
 public class ProfilePage extends BasePage{
 
@@ -24,17 +21,24 @@ public class ProfilePage extends BasePage{
     @FindBy (xpath = "//label[contains(@class,'btn-all btn btn-primary active')]")
         private WebElement allPostProfilePage;
 
-
     public ProfilePage(WebDriver driver, Logger log) {
         super(driver, log);
         PageFactory.initElements(driver, this);
     }
-    public void ChangeProfilePicture(File file){
+    public void changeProfilePicture(String path){
         wait.until(ExpectedConditions.visibilityOf(profilePicture));
         boolean profilePictureElementPresent = profilePicture.isDisplayed();
         Assert.assertTrue(profilePictureElementPresent, "Profile picture element not found!");
         profilePicture.click();
-        profilePicture.sendKeys(file.getAbsolutePath());
+        profilePicture.sendKeys(path);
+    }
+    public void signOut(){
+        wait.until(ExpectedConditions.visibilityOf(signOutButton));
+        boolean signOutButtonPresent = signOutButton.isDisplayed();
+        Assert.assertTrue(signOutButtonPresent, "SignOut element not found!");
+        signOutButton.click();
+    }
+    public void popUpMsgSignOut(){
 
     }
 }

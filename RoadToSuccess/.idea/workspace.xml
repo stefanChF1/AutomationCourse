@@ -6,8 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="e7ca2ad0-58c1-4344-81a5-8d41189e6465" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/POM/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/POM/LoginPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/POM/ProfilePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/POM/ProfilePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/test/ChangingProfilePictureTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/ChangingProfilePictureTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/LoginSuccess.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/UploadingPicture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CreatingPost.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/screenshots/ChangeProfilePicture.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +48,9 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "TestNG.ChangingProfilePicture.ChangeProfilePicture.executor": "Run",
     "TestNG.ChangingProfilePictureTest.ChangeProfilePicture.executor": "Run",
+    "TestNG.LoginAndOut.loginAndOut.executor": "Run",
+    "TestNG.LoginInvalidPassword.LoginWithInvalidPassword.executor": "Run",
+    "TestNG.LoginInvalidUsername.loginWithInvalidUsername.executor": "Run",
     "TestNG.LoginTest.signInWithValidCredentials.executor": "Debug",
     "TestNG.loginT.executor": "Run",
     "TestNG.loginT.signInWithValidCredentials.executor": "Run",
@@ -57,7 +65,7 @@
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.ChangingProfilePictureTest.ChangeProfilePicture">
+  <component name="RunManager" selected="TestNG.LoginAndOut.loginAndOut">
     <configuration name="ChangingProfilePictureTest.ChangeProfilePicture" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="RoadToSuccess" />
       <extension name="coverage">
@@ -76,34 +84,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginAndOut.loginAndOut" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="RoadToSuccess" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="test.ChangingProfilePictureTest" />
+          <option name="PATTERN" value="test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="test.LoginTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LoginTest.signInWithValidCredentials" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="RoadToSuccess" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.ChangingProfilePictureTest" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="test.LoginTest" />
-      <option name="METHOD_NAME" value="signInWithValidCredentials" />
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.LoginAndOut" />
+      <option name="METHOD_NAME" value="loginAndOut" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -111,24 +102,43 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RegistartionTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginInvalidPassword.LoginWithInvalidPassword" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="RoadToSuccess" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="test.ChangingProfilePictureTest" />
+          <option name="PATTERN" value="test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="test.RegistartionTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.LoginInvalidPassword" />
+      <option name="METHOD_NAME" value="LoginWithInvalidPassword" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RegistartionTest.successfulRegistration" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginInvalidUsername.loginWithInvalidUsername" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="RoadToSuccess" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.LoginInvalidUsername" />
+      <option name="METHOD_NAME" value="loginWithInvalidUsername" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginSuccess.signInWithValidCredentials" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="RoadToSuccess" />
       <extension name="coverage">
         <pattern>
@@ -137,8 +147,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="test.RegistartionTest" />
-      <option name="METHOD_NAME" value="successfulRegistration" />
+      <option name="MAIN_CLASS_NAME" value="test.LoginSuccess" />
+      <option name="METHOD_NAME" value="signInWithValidCredentials" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -148,11 +158,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.LoginAndOut.loginAndOut" />
+        <item itemvalue="TestNG.LoginInvalidUsername.loginWithInvalidUsername" />
+        <item itemvalue="TestNG.LoginInvalidPassword.LoginWithInvalidPassword" />
         <item itemvalue="TestNG.ChangingProfilePictureTest.ChangeProfilePicture" />
-        <item itemvalue="TestNG.LoginTest.signInWithValidCredentials" />
-        <item itemvalue="TestNG.RegistartionTest.successfulRegistration" />
-        <item itemvalue="TestNG.RegistartionTest" />
-        <item itemvalue="TestNG.LoginTest" />
+        <item itemvalue="TestNG.LoginSuccess.signInWithValidCredentials" />
       </list>
     </recent_temporary>
   </component>
