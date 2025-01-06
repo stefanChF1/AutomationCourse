@@ -6,9 +6,8 @@ import org.testng.annotations.Test;
 public class RegistartionTest extends gui.base.BaseTest {
 
     @Test
-    public void successfulRegistration() throws InterruptedException {
-        RegistrationPage regPageMethods;
-        regPageMethods = new RegistrationPage(driver,log);
+    public void successfulRegistration(){
+        RegistrationPage regPageMethods = new RegistrationPage(super.driver,log);
 
         driver.get(REGISTRATION_URL);
         log.info("Starting REGISTRATION test");
@@ -21,5 +20,4 @@ public class RegistartionTest extends gui.base.BaseTest {
         regPageMethods.regUserRegisterButtonClick();
 
     }
-
 }
