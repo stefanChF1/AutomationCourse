@@ -6,8 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="e7ca2ad0-58c1-4344-81a5-8d41189e6465" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/POM/ProfilePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/POM/ProfilePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/test/ChangingProfilePictureTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/ChangingProfilePictureTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/screenshots/ChangeProfilePicture.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/screenshots/ChangeProfilePicture.jpg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,33 +37,33 @@
     <option name="showLibraryContents" value="true" />
     <option name="sortKey" value="BY_TIME_DESCENDING" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "TestNG.ChangingProfilePicture.ChangeProfilePicture.executor": "Run",
-    "TestNG.ChangingProfilePictureTest.ChangeProfilePicture.executor": "Run",
-    "TestNG.LoginAndOut.loginAndOut.executor": "Run",
-    "TestNG.LoginInvalidPassword.LoginWithInvalidPassword.executor": "Run",
-    "TestNG.LoginInvalidUsername.loginWithInvalidUsername.executor": "Run",
-    "TestNG.LoginSuccess.signInWithValidCredentials.executor": "Run",
-    "TestNG.LoginTest.signInWithValidCredentials.executor": "Debug",
-    "TestNG.RegistartionTest.successfulRegistration.executor": "Run",
-    "TestNG.ScreenshotCapture.screenshotCapture.executor": "Run",
-    "TestNG.loginT.executor": "Run",
-    "TestNG.loginT.signInWithValidCredentials.executor": "Run",
-    "TestNG.registartionT.executor": "Run",
-    "TestNG.registartionT.successfulRegistration.executor": "Run",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/stefanstoyanov/Documents/Git/SkilloHomework/AutomationCourse/RoadToSuccess",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;TestNG.ChangingProfilePicture.ChangeProfilePicture.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.ChangingProfilePictureTest.ChangeProfilePicture.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LoginAndOut.loginAndOut.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LoginInvalidPassword.LoginWithInvalidPassword.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LoginInvalidUsername.loginWithInvalidUsername.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LoginSuccess.signInWithValidCredentials.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LoginTest.signInWithValidCredentials.executor&quot;: &quot;Debug&quot;,
+    &quot;TestNG.RegistartionTest.successfulRegistration.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.ScreenshotCapture.screenshotCapture.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.loginT.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.loginT.signInWithValidCredentials.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.registartionT.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.registartionT.successfulRegistration.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/stefanstoyanov/Documents/Git/SkilloHomework/AutomationCourse/RoadToSuccess&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="TestNG.ChangingProfilePictureTest.ChangeProfilePicture">
     <configuration name="ChangingProfilePictureTest.ChangeProfilePicture" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="RoadToSuccess" />

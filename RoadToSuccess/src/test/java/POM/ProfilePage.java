@@ -13,15 +13,17 @@ import java.io.File;
 public class ProfilePage extends BasePage{
 
     @FindBy (xpath = "//img[contains(@alt,'Profile Picture')]" )
-        private WebElement profilePicture;
+    private WebElement profilePicture;
     @FindBy (xpath = "//i[contains(@class,'far fa-plus-square fa-lg')]")
-        private WebElement newPost;
+    private WebElement newPost;
     @FindBy (xpath = "/html/body/app-root/div[2]/app-profile/div/div[1]/app-profile-section/div/div/div[2]/div/div[1]/i")
-        private WebElement editProfile;
+    private WebElement editProfile;
     @FindBy (xpath = "//i[contains(@class,'fas fa-sign-out-alt fa-lg')]")
-        private WebElement signOutButton;
+    private WebElement signOutButton;
     @FindBy (xpath = "//label[contains(@class,'btn-all btn btn-primary active')]")
-        private WebElement allPostProfilePage;
+    private WebElement allPostProfilePage;
+    @FindBy (xpath = "//input[@id='upload-img']")
+    private WebElement inputPic;
 
     public ProfilePage(WebDriver driver, Logger log) {
         super(driver, log);
@@ -31,8 +33,8 @@ public class ProfilePage extends BasePage{
         wait.until(ExpectedConditions.visibilityOf(profilePicture));
         boolean profilePictureElementPresent = profilePicture.isDisplayed();
         Assert.assertTrue(profilePictureElementPresent, "Profile picture element not found!");
-        profilePicture.click();
-        profilePicture.sendKeys(file.getAbsolutePath());
+        inputPic.sendKeys(file.getAbsolutePath());
+        Assert.assertTrue(profilePictureElementPresent, "Profile picture element not found!");
     }
     public void signOut(){
         wait.until(ExpectedConditions.visibilityOf(signOutButton));

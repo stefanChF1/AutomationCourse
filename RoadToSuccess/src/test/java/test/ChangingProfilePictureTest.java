@@ -3,6 +3,7 @@ package test;
 
 import POM.LoginPage;
 import POM.ProfilePage;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.io.File;
@@ -10,10 +11,10 @@ import java.net.URISyntaxException;
 
 public class ChangingProfilePictureTest extends gui.base.BaseTest {
 
-            //This test is designed to change the user's profile picture
+    //This test is designed to change the user's profile picture
     @Test
     public void ChangeProfilePicture() throws InterruptedException, URISyntaxException {
-        File crazyPicture = new File(System.getProperty("user.dir") + "/src/test/resources/upload/Crazy.jpeg");
+        File crazyPicture = new File(System.getProperty("user.dir") + "/src/test/resources/upload/Crazy.jpg");
         File profilePictureMV = new File("/src/test/resources/upload/Profile.jpeg");
         String filePath = System.getProperty("user.dir") + "/src/test/resources/upload/Profile.jpeg";
 
@@ -30,3 +31,4 @@ public class ChangingProfilePictureTest extends gui.base.BaseTest {
         profilePageMethods.changeProfilePicture(crazyPicture);
     }
 }
+
