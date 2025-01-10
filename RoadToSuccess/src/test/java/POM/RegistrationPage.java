@@ -38,41 +38,47 @@ public class RegistrationPage extends BasePage {
         Assert.assertTrue(regUserInputPresent, "Username field not present!");
         regUserInputUsername.sendKeys("MrLova" + number);
     }
+
     public void regUserEnterEmail(){
         wait.until(ExpectedConditions.visibilityOf(regUserInputEmail));
         boolean regUserInputEmailPresent = regUserInputEmail.isDisplayed();
         Assert.assertTrue(regUserInputEmailPresent, "Email field not present!");
         regUserInputEmail.sendKeys(number + "aA@gmail.com");
     }
+
     public void regUserEnterDOB(){
         wait.until(ExpectedConditions.visibilityOf(regUserInputDOB));
         boolean regUserInputDOBPresent = regUserInputDOB.isDisplayed();
         Assert.assertTrue(regUserInputDOBPresent, "DOB field not present!");
         regUserInputDOB.sendKeys("10.10.2020");
     }
+
     public void regUserEnterPass(){
         wait.until(ExpectedConditions.visibilityOf(regUserInputPass));
         boolean regUserInputPassPresent = regUserInputPass.isDisplayed();
         Assert.assertTrue(regUserInputPassPresent, "Pass field not present!");
         regUserInputPass.sendKeys("YouWishYouKnew1");
     }
+
     public void regUserEnterCnfPass(){
         wait.until(ExpectedConditions.visibilityOf(regUserInputCnfPass));
         boolean regUserCnfPassPresent = regUserInputCnfPass.isDisplayed();
         Assert.assertTrue(regUserCnfPassPresent, "Confirm pass field not present!");
         regUserInputCnfPass.sendKeys("YouWishYouKnew1");
     }
+
     public void regUserEnterPublicName(){
         wait.until(ExpectedConditions.visibilityOf(regUserInputPublicName));
         boolean regUserInputPublicNamePresent = regUserInputPublicName.isDisplayed();
         Assert.assertTrue(regUserInputPublicNamePresent, "Public name field not present!");
         regUserInputPublicName.sendKeys("Chefo");
     }
+
     public void regUserRegisterButtonClick(){
         wait.until(ExpectedConditions.elementToBeClickable(regUserRegisterButton));
         boolean regUserRegistrationButtonPresent = regUserRegisterButton.isDisplayed();
         Assert.assertTrue(regUserRegistrationButtonPresent, "Register button not present!");
         regUserRegisterButton.click();
-    }
 
+    }
 }

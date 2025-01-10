@@ -23,6 +23,6 @@ public class BasePage {
     public void navigateTo(String pageURLPath) {
         String BASE_PAGE = "http://training.skillo-bg.com:4300";
         String currentURL = BASE_PAGE + pageURLPath;
-        driver.get(currentURL);
+         driver.get(currentURL);
     }
 }

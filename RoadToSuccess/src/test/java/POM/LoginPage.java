@@ -1,6 +1,5 @@
 package POM;
 
-import net.bytebuddy.asm.Advice;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -8,8 +7,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
-
-import java.io.File;
 
 public class LoginPage extends BasePage {
 
@@ -72,6 +69,7 @@ public class LoginPage extends BasePage {
     public void popUpMsgLogout(){
         wait.until(ExpectedConditions.visibilityOf(popUpMsg));
         Assert.assertEquals(popUpMsg.getText(), "Successful logout!");
+
     }
     public void popUpMsgSuccessfulReg(){
         wait.until(ExpectedConditions.visibilityOf(popUpMsg));

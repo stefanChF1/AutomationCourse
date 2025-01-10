@@ -18,14 +18,21 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class BaseTest {
+                //URLs
     public static final String LOGIN_URL = "http://training.skillo-bg.com:4300/users/login";
     public static final String HOME_URL = "http://training.skillo-bg.com:4300/posts/all";
     public static final String REGISTRATION_URL = "http://training.skillo-bg.com:4300/users/register";
+                //Directories
     protected static final String TEST_RESOURCES_DIR = "src/test/resources/";
     protected static final String DOWNLOAD_DIR = TEST_RESOURCES_DIR.concat("download/");
     protected static final String SCREENSHOTS_DIR = TEST_RESOURCES_DIR.concat("screenshots/");
     protected static final String REPORTS_DIR = TEST_RESOURCES_DIR.concat("reports/");
     protected static final String UPLOAD_DIR = TEST_RESOURCES_DIR.concat("upload/");
+                //Pictures
+    protected static final File leoHehe = new File(System.getProperty("user.dir") + "/src/test/resources/upload/LeoHehe.jpg" );
+    protected static final File leoCheers = new File(System.getProperty("user.dir") + "/src/test/resources/upload/LeoCheers.jpg" );
+    protected static final File crazyPicture = new File(System.getProperty("user.dir") + "/src/test/resources/upload/Crazy.jpg");
+    protected static final File profilePictureMV = new File(System.getProperty("user.dir")+ "/src/test/resources/upload/Profile.jpeg");
 
     protected WebDriver driver;
     protected Logger log;

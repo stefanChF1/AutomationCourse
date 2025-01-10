@@ -4,6 +4,7 @@ import POM.LoginPage;
 import org.testng.annotations.Test;
 
 public class LoginInvalidUsername extends gui.base.BaseTest {
+
             //This test is designed to validate the security protocols
     @Test
     public void loginWithInvalidUsername(){

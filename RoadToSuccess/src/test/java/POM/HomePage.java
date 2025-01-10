@@ -23,7 +23,6 @@ public class HomePage extends BasePage {
         super(driver, log);
         PageFactory.initElements(driver, this);
     }
-
     private void navigateToHomePage(){
 
     }

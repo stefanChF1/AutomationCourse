@@ -1,12 +1,19 @@
 package test;
 
 import POM.LoginPage;
+import POM.NewPostPage;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
+import java.io.File;
+
 public class CreatingPost extends gui.base.BaseTest {
-            //This test is designed to validate the Create a post function
+
+    //This test is designed to validate the Create a post function
     @Test
-    public void UploadingPictureTest(){
+    public void UploadingPictureTest() throws InterruptedException {
+
+
         LoginPage loginPageMethods = new LoginPage(super.driver,log);
 
         driver.get(LOGIN_URL);
@@ -17,7 +24,14 @@ public class CreatingPost extends gui.base.BaseTest {
         loginPageMethods.clickSignIn();
             //Navigate to profile page
         loginPageMethods.openProfile();
+            //Creating post
+
+        NewPostPage newPostPageMethods = new NewPostPage(super.driver,log);
+            //Choose which picture you want to post
+        newPostPageMethods.createPost(leoCheers);
+            //Write your caption below
+        newPostPageMethods.addCaption("Its Leo, hehe!");
+        Thread.sleep(5000);
 
     }
-
 }
