@@ -10,6 +10,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 
 import java.io.File;
+import java.util.List;
+
 
 
 public class ProfilePage extends BasePage{
@@ -26,7 +28,7 @@ public class ProfilePage extends BasePage{
     private WebElement allPostProfilePage;
     @FindBy (xpath = "//input[@id='upload-img']")
     private WebElement inputProfilePicture;
-    
+
 
     public ProfilePage(WebDriver driver, Logger log) {
         super(driver, log);
@@ -63,6 +65,12 @@ public class ProfilePage extends BasePage{
         boolean signOutButtonPresent = signOutButton.isDisplayed();
         Assert.assertTrue(signOutButtonPresent, "SignOut element not found!");
         signOutButton.click();
+
+    }
+    public void openPost(int index){
+        List<WebElement> post = driver.findElements(By.cssSelector("app-post"));
+        wait.until(ExpectedConditions.visibilityOf((WebElement) post));
+        ((WebElement) post).click();
 
     }
 }
