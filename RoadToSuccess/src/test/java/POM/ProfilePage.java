@@ -14,19 +14,19 @@ import java.util.List;
 
 
 
-public class ProfilePage extends BasePage{
+public class ProfilePage extends BasePage {
 
-    @FindBy (xpath = "//img[contains(@alt,'Profile Picture')]" )
+    @FindBy(xpath = "//img[contains(@alt,'Profile Picture')]")
     private WebElement profilePicture;
-    @FindBy (xpath = "//i[contains(@class,'far fa-plus-square fa-lg')]")
+    @FindBy(xpath = "//i[contains(@class,'far fa-plus-square fa-lg')]")
     private WebElement createNewPost;
-    @FindBy (xpath = "/html/body/app-root/div[2]/app-profile/div/div[1]/app-profile-section/div/div/div[2]/div/div[1]/i")
+    @FindBy(xpath = "/html/body/app-root/div[2]/app-profile/div/div[1]/app-profile-section/div/div/div[2]/div/div[1]/i")
     private WebElement editProfile;
-    @FindBy (xpath = "//i[contains(@class,'fas fa-sign-out-alt fa-lg')]")
+    @FindBy(xpath = "//i[contains(@class,'fas fa-sign-out-alt fa-lg')]")
     private WebElement signOutButton;
-    @FindBy (xpath = "//label[contains(@class,'btn-all btn btn-primary active')]")
+    @FindBy(xpath = "//label[contains(@class,'btn-all btn btn-primary active')]")
     private WebElement allPostProfilePage;
-    @FindBy (xpath = "//input[@id='upload-img']")
+    @FindBy(xpath = "//input[@id='upload-img']")
     private WebElement inputProfilePicture;
 
 
@@ -47,7 +47,7 @@ public class ProfilePage extends BasePage{
         Assert.assertTrue(profilePictureElementPresent, "Profile picture element not found!");
         WebElement popUp = driver.findElement(By.cssSelector("div.toast-message"));
         wait.until(ExpectedConditions.visibilityOf(popUp));
-            //IK thread sleep sucks, but nothing else worked!
+        //IK thread sleep sucks, but nothing else worked!
         Thread.sleep(5000);
         super.driver.navigate().refresh();
 
@@ -56,21 +56,26 @@ public class ProfilePage extends BasePage{
         String newPhotoSource = newPic.getAttribute("src");
         System.out.println("New photo src: " + newPhotoSource);
 
-            //Assert profile picture had changed
+        //Assert profile picture had changed
         Assert.assertNotEquals(oldPhotoSource, newPhotoSource, "The sources are same but should not be!");
     }
 
-    public void signOut(){
+    public void signOut() {
         wait.until(ExpectedConditions.visibilityOf(signOutButton));
         boolean signOutButtonPresent = signOutButton.isDisplayed();
         Assert.assertTrue(signOutButtonPresent, "SignOut element not found!");
         signOutButton.click();
 
     }
-    public void openPost(int index){
-        List<WebElement> post = driver.findElements(By.cssSelector("app-post"));
-        wait.until(ExpectedConditions.visibilityOf((WebElement) post));
-        ((WebElement) post).click();
 
+    public void openPost(int index) {
+        List<WebElement> posts = driver.findElements(By.cssSelector("app-post.app-post"));
+        if (index >= 0 && index < posts.size()) {
+            WebElement post = posts.get(index);
+            wait.until(ExpectedConditions.visibilityOf(post));
+            post.click();
+        } else {
+            throw new IndexOutOfBoundsException("Invalid post with index: " + index);
+        }
     }
 }
