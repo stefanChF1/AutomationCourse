@@ -24,7 +24,7 @@ public class ChangingProfilePictureTest extends gui.base.BaseTest {
 
             //Calling upload method from another POM
         ProfilePage profilePageMethods = new ProfilePage(super.driver, log);
-        profilePageMethods.changeProfilePicture(crazyPicture);
+        profilePageMethods.changeProfilePicture(profilePictureCrazy);
     }
 }
 

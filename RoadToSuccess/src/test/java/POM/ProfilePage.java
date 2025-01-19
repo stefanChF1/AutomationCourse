@@ -13,7 +13,6 @@ import java.io.File;
 import java.util.List;
 
 
-
 public class ProfilePage extends BasePage {
 
     @FindBy(xpath = "//img[contains(@alt,'Profile Picture')]")

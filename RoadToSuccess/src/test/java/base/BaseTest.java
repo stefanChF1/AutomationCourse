@@ -31,7 +31,7 @@ public class BaseTest {
                 //Pictures
     protected static final File leoHehe = new File(System.getProperty("user.dir") + "/src/test/resources/upload/LeoHehe.jpg" );
     protected static final File leoCheers = new File(System.getProperty("user.dir") + "/src/test/resources/upload/LeoCheers.jpg" );
-    protected static final File crazyPicture = new File(System.getProperty("user.dir") + "/src/test/resources/upload/Crazy.jpg");
+    protected static final File profilePictureCrazy = new File(System.getProperty("user.dir") + "/src/test/resources/upload/Crazy.jpg");
     protected static final File profilePictureMV = new File(System.getProperty("user.dir")+ "/src/test/resources/upload/Profile.jpeg");
 
     protected WebDriver driver;
