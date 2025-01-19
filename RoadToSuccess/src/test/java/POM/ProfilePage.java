@@ -28,6 +28,10 @@ public class ProfilePage extends BasePage {
     private WebElement allPostProfilePage;
     @FindBy(xpath = "//input[@id='upload-img']")
     private WebElement inputProfilePicture;
+    @FindBy(xpath = "//label[contains(@class, 'delete-ask')]")
+    private WebElement deleteThisPost;
+    @FindBy(xpath = "/html/body/ngb-modal-window/div/div/app-post-modal/div/div[2]/div[4]/div/div/div/div[4]/div/div/button[1]")
+    private WebElement deleteThisPostYes;
 
 
     public ProfilePage(WebDriver driver, Logger log) {
@@ -77,5 +81,14 @@ public class ProfilePage extends BasePage {
         } else {
             throw new IndexOutOfBoundsException("Invalid post with index: " + index);
         }
+    }
+    public void deleteOpenedPost(){
+        wait.until(ExpectedConditions.elementToBeClickable(deleteThisPost));
+        deleteThisPost.click();
+
+    }
+    public void setDeleteThisPostYes(){
+        wait.until(ExpectedConditions.elementToBeClickable(deleteThisPostYes));
+        deleteThisPostYes.click();
     }
 }

@@ -75,11 +75,15 @@ public class LoginPage extends BasePage {
         wait.until(ExpectedConditions.visibilityOf(popUpMsg));
         Assert.assertEquals(popUpMsg.getText(), "Successful register!");
     }
-    public void openProfile(){
+    public void openProfile() {
         wait.until(ExpectedConditions.visibilityOf(navBarProfile));
         boolean profileButtonPresent = navBarProfile.isDisplayed();
         Assert.assertTrue(profileButtonPresent, "Profile button is not present!");
         navBarProfile.click();
+    }
+    public void popUpMsgPostDeleted(){
+        wait.until(ExpectedConditions.visibilityOf(popUpMsg));
+        Assert.assertEquals(popUpMsg.getText(), "Post Deleted!");
 
     }
 }

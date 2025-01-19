@@ -30,7 +30,7 @@ public class CreatingPost extends gui.base.BaseTest {
             //Choose which picture you want to post
         newPostPageMethods.createPost(leoCheers);
             //Write your caption below
-        newPostPageMethods.addCaption("Its Leo, hehe!");
+        newPostPageMethods.addCaption("Cheers to the wicked!");
         Thread.sleep(5000);
 
     }

@@ -26,7 +26,9 @@ public class DeletePost extends gui.base.BaseTest {
 
         ProfilePage profilePageMethods = new ProfilePage(driver, log);
         profilePageMethods.openPost(1);
-
+        profilePageMethods.deleteOpenedPost();
+        profilePageMethods.setDeleteThisPostYes();
+        loginPageMethods.popUpMsgPostDeleted();
         Thread.sleep(5000);
     }
 }
